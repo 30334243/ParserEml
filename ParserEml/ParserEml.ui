@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ParserEmlClass</class>
+ <widget class="QMainWindow" name="ParserEmlClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ParserEml</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QListWidget" name="LstDir"/>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="TableResult"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="ActDir"/>
+   <addaction name="ActStart"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="ActDir">
+   <property name="icon">
+    <iconset resource="ParserEml.qrc">
+     <normaloff>:/ParserEml/Images/Add3.png</normaloff>:/ParserEml/Images/Add3.png</iconset>
+   </property>
+   <property name="text">
+    <string>selectdir</string>
+   </property>
+   <property name="toolTip">
+    <string>Выбрать директорию с письмами</string>
+   </property>
+  </action>
+  <action name="ActStart">
+   <property name="icon">
+    <iconset resource="ParserEml.qrc">
+     <normaloff>:/ParserEml/Images/Execute.png</normaloff>:/ParserEml/Images/Execute.png</iconset>
+   </property>
+   <property name="text">
+    <string>start</string>
+   </property>
+   <property name="toolTip">
+    <string>Запустить парсес писем</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ParserEml.qrc"/>
+ </resources>
+ <connections/>
+</ui>

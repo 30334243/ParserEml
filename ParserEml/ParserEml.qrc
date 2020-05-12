@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="ParserEml">
+    <file>Images/Execute.png</file>
+    <file>Images/Add3.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+x64/*
+.vs/*
+ParserEml/x64/*
+ParserEml/ParserEml.vcxproj
+ParserEml/emails.sqlite
+ParserEml/ParserEml.vcxproj.filters
+ParserEml/ParserEml.vcxproj.user
