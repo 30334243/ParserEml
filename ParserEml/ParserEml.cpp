@@ -7,8 +7,6 @@
 
 #include "../Base64/Base64.h"
 
-//#pragma comment (lib, "msvcrt.lib")
-
 ParserEml::ParserEml(QWidget* parent)
 	: QMainWindow(parent),
 	mSettings{ "572", "ParserEml" }
