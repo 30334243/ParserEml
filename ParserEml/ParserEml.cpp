@@ -2,10 +2,10 @@
 #include <Header.h>
 #include "ParserEml.h"
 
-#include <FileOperations.hpp>
-#include <Strings.hpp>
+#include "../FileOperations/FileOperations.hpp"
+#include "../Strings/Strings.hpp"
 
-#include "Base64.h"
+#include "../Base64/Base64.h"
 
 //#pragma comment (lib, "msvcrt.lib")
 
@@ -51,12 +51,12 @@ ParserEml::ParserEml(QWidget* parent)
 
 void ParserEml::AddLst()
 {
-	fop::reg::select_path_dir(mSettings, DIR);
+	fops::reg::select_path_dir(mSettings, DIR);
 
 	fs::path dir{ mSettings.value(DIR).toString().toStdString() };
 
 	for (const auto& file : fs::directory_iterator{ dir }
-		 | views::remove_if(fop::is_not_file))
+		 | views::remove_if(fops::is_not_file))
 	{
 		ui.LstDir->addItem(QString{ file.path().filename().generic_string().c_str() });
 	}
@@ -497,8 +497,8 @@ void ParserEml::Parsing()
 
 	std::vector<std::vector<char>> datas{
 		fs::directory_iterator{ dir }
-		| views::remove_if(fop::is_not_file)
-		| views::transform(fop::read_file)
+		| views::remove_if(fops::is_not_file)
+		| views::transform(fops::read_file)
 	};
 
 	std::vector<std::vector<std::vector<std::string>>> out(datas.size());

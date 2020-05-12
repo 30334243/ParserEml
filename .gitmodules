@@ -1,0 +1,16 @@
+[submodule "Header"]
+	path = Header
+	url = https://github.com/30334243/Header
+	branch = 30334243-patch-1
+[submodule "FileOperations"]
+	path = FileOperations
+	url = https://github.com/30334243/FileOperations
+[submodule "Strings"]
+	path = Strings
+	url = https://github.com/30334243/Strings
+[submodule "Base64"]
+	path = Base64
+	url = https://github.com/30334243/Base64
+[submodule "db"]
+	path = db
+	url = https://github.com/30334243/db

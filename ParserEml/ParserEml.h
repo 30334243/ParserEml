@@ -1,7 +1,7 @@
 #pragma once
 #include "ui_ParserEml.h"
 
-#include <db.hpp>
+#include "../db/db.hpp"
 
 static const QString GDATE{ "Date: " };
 static const QString TO{ "To: " };
